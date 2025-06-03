@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我要買二手書</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: '微軟正黑體', sans-serif;
+        }
+
+        /* 漸層背景 */
+        body {
+            background: linear-gradient(to bottom right, #e6f3ff, #ffffff);
+            min-height: 100vh;
+        }
+
+        /* 頁面標題漸層 */
+        .header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* 導航欄漸層 */
+        .nav {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        /* 搜尋框 */
+        .search {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .search input {
+            width: 80%;
+            max-width: 500px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 2px solid #4facfe;
+        }
+
+        /* 書籍展示區 */
+        .books {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* 書籍卡片 */
+        .book-card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .book-image {
+            width: 100%;
+            height: 200px;
+            background: #eee;
+        }
+
+        .book-info {
+            padding: 15px;
+        }
+
+        .book-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .book-price {
+            color: #ff6b6b;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* 按鈕漸層 */
+        .buy-button {
+            background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>我要買二手書</h1>
+        <p>尋找您心儀的二手書書</p>
+    </header>
+
+    <div class="nav">
+        <a href="#">首頁</a>
+        <a href="#">分類</a>
+        <a href="#">購物車</a>
+        <a href="#">我的帳戶</a>
+    </div>
+
+
+    <div class="search">
+        <input type="text" placeholder="搜尋書名、作者...">
+    </div>
+
+    <div class="books">
+        <!-- 書籍卡片1 -->
+        <div class="book-card">
+            <div class="book-image">
+                <img src="https://s.eslite.com/upload/product/2682322422005/o/9781338878929_1.jpg" alt="書籍封面" class="book-image">
+            </div>
+            <div class="book-info">
+                <h3 class="book-title">童話書</h3>
+                <p>作者：王嘻明</p>
+                <p>狀況：九成新</p>
+                <p class="book-price">NT$ 200</p>
+                <button class="buy-button">加入購物車</button>
+            </div>
+        </div>
+
+        <!-- 書籍卡片2 -->
+        <div class="book-card">
+            <div class="book-image">
+                <img src="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/089/00/0010890099.jpg&v=607d5bc4k&w=375&h=375" alt="書籍封面" class="book-image">
+            </div>
+            <div class="book-info">
+                <h3 class="book-title">摩芥</h3>
+                <p>作者：妮妮</p>
+                <p>狀況：全新</p>
+                <p class="book-price">NT$ 150</p>
+                <button class="buy-button">加入購物車</button>
+            </div>
+        </div>
+
+        <!-- 書籍卡片3 -->
+        <div class="book-card">
+            <div class="book-image">
+                <img src="https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/045/70/0010457002_bc_01.jpg&v=4b33561bk&w=375&h=375" alt="書籍封面" class="book-image">
+            </div>
+            <div class="book-info">
+                <h3 class="book-title">小王指</h3>
+                <p>作者：嘻教授</p>
+                <p>狀況：八成新</p>
+                <p class="book-price">NT$ 180</p>
+                <button class="buy-button">加入購物車</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
